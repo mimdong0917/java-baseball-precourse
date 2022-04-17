@@ -38,15 +38,15 @@ public class UserVal {
     private void checkValidateUserVal(String userValString){
 
         if(userValString.length() != VALID_LENGTH) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("3개 이상의 값을 입력했습니다.");
         }
 
         if(!isUnique(userValString)) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("모두 서로 다른 값이 아닙니다.");
         }
 
         if(!isValidDigit(userValString)){
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("숫자가 아닌 값을 입력했습니다.");
         }
 
     }
