@@ -26,6 +26,7 @@ public class OutputView {
     }
 
     public static void printWinningMessage() {
+        System.out.println(3+STRIKE);
         System.out.println(CORRECT_ANSWER_MESSAGE);
     }
 
